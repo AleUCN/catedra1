@@ -1,0 +1,90 @@
+{
+	"info": {
+		"_postman_id": "54ea0188-a614-408d-94a0-59b7839ca227",
+		"name": "CatedraUnoWM",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33599274"
+	},
+	"item": [
+		{
+			"name": "Create eBook",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"title\",\r\n    \"author\": \"author\",\r\n    \"genre\": \"genre\",\r\n    \"format\": \"format\",\r\n    \"price\": 10\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{api}}/ebook",
+					"host": [
+						"{{api}}"
+					],
+					"path": [
+						"ebook"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all eBooks",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Update eBook",
+			"request": {
+				"method": "PUT",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Change availability",
+			"request": {
+				"method": "PUT",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Change stock",
+			"request": {
+				"method": "PUT",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Purchase eBook",
+			"request": {
+				"method": "POST",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Delete eBook",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "api",
+			"value": "http://localhost:5000/api"
+		}
+	]
+}
